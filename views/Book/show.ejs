@@ -1,0 +1,38 @@
+<body>
+  <%- include('../partials/_navbar.ejs') %>
+<link rel="stylesheet" href="/stylesheet/style.css" />
+  <h1>The Book  <%= book.bookName %></h1>
+
+  <h2>Favorites</h2>
+  <p>Favorited By <%= book.favoritedByUser ? book.favoritedByUser.length : 0 %> people.</p>
+
+  <% if(userHasFavorited) { %>
+    <p>You've favorited this Book!</p>
+    <form action="/books/<%= book._id %>/favorited-by/<%= user._id %>?_method=DELETE" method="POST">
+      <button type="submit">Unfavorite It!</button>
+    </form>
+  <% } else { %>
+    <p>You havn't favorited this Book</p>
+    <form action="/books/<%= book._id %>/favorited-by/<%= user._id %>" method="POST">
+        <button type="submit">Favorite It!</button>
+      </form>
+  <% } %>
+
+  <h2>Details</h2>
+  <p>Book's Name:   <%= book.bookName %></p>
+  <p>Genre:         <%= book.genre %></p>
+  <p>Language:     $<%= book.language %></p>
+  <p>Auther's Name: <%= book.autherName %></p>
+  <p>Available in Bahrain: <%= book.availability %> </p>
+  <h2>Owner</h2>
+
+  <% if (book.owner._id.equals(user._id)) { %>
+    <p>You own this!</p>
+    <a href="/books/<%= book._id %>/edit">Edit this Book</a>
+    <form action="/books/<%= book._id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete this Book</button>
+    </form>
+  <% } else { %>
+    <p>You don't own this, <%= book.owner.username %> does!</p>
+  <% } %>
+</body>

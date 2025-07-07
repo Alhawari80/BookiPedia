@@ -1,0 +1,24 @@
+<%- include("../partials/_navbar.ejs")  %>
+<link rel="stylesheet" href="/stylesheet/style.css" />
+<h1>Here's all Our Books</h1>
+  <!-- <link rel="stylesheet" href="/stylesheet/style.css" /> -->
+<ul>
+  <% books.forEach(Book => { %>
+    <li>
+      The Book: 
+      <%= Book.BookName %> 
+      Of
+       <%= Book.auther %>
+      owned by
+      <%= Book.owner.username %>
+      is 
+       <%= Book.availability %> 
+       <div class="button-menu">
+      <a href="/books/<%= Book._id %>">View more details</a> 
+      </div>
+    </li>
+  <% }) %>
+</ul>
+<div class="button">
+<a href="/books/new">Add a new Book</a>
+</div>

@@ -1,0 +1,36 @@
+  <%- include('../partials/_navbar.ejs') %>
+  <link rel="stylesheet" href="/stylesheet/style.css" />
+  
+   <div class="card">
+
+    <h1>Add a new Book</h1>
+  <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+  <div class="container">
+   
+    <p>Book Details</p>
+  </div>
+  <form method="POST" action="/books">
+
+    <label for="book">Book's Name:</label>
+    <input type="text" name="bookName" id="book" />
+    <br>
+
+    <label for="auther">Auther's Name:</label>
+    <input type="text" name="auther" id="auther" />
+    <br>
+
+    <label for="genre">Genre:</label>
+    <input type="text" name="genre" id="genre" />
+    <br>
+
+    <label for="availability">Available in Bahrain:</label>
+    <input type="checkbox" name="availability" id="availability"  />
+    <br>
+
+    <label for="language">Language:</label>
+    <input type="text" name="language" id="language"  />
+    <br>
+
+    <button type="submit">Add a Book</button>
+  </form>
+  
