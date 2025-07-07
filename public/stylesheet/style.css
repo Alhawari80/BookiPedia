@@ -22,12 +22,12 @@
    text-align: center;
    padding: 10px;
  }
-._navbar.ejs
+/* ._navbar.ejs
 {
    color: #43c7ce;
    font-size:15px;
    text-align: center;
- }
+ } */
 
  label,
  input {
