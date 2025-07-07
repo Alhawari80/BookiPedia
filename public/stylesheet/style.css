@@ -1,87 +1,170 @@
-  body {
-   background: #fff8ed;
-   font-family: "DM Sans", sans-serif;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   max-width: 100vw;
- }
 
- h1 {
-   color: #4f0b47;
-   font-size: 3.6em;
- }
-
- footer {
-   font-size: 0.7em;
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   text-align: center;
-   padding: 10px;
- }
-/* ._navbar.ejs
-{
-   color: #43c7ce;
-   font-size:15px;
-   text-align: center;
- } */
-
- label,
- input {
-   margin: 10px 2px 0 2px;
- }
-
- button {
-   align-self: center;
-   margin: 10px 4px 4px 4px;
-   background-color: #3f6a51;
-   color: white;
-   padding: 5px 10px;
-   border-radius: 15px;
-   border: none;
-   width: 15em;
- }
-
- .button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 8px;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- 
 
- button:hover {
-   background-color: #769642;
- }
+/* Body styling for centering and background */
+body {
+  
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsla(153, 88%, 16%, 0.619); /* Subtle background */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+}
 
- button:active {
-   background-color: #2d4d3a;
- }
-
- .button-menu
- {  background-color: #ed3ab1; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  line-height: 5px ;
+/* Main card container for homepage */
+.container {
+  background: hsl(330, 4%, 90%);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 50%;
+  max-width: 500px; /* Larger card for content */
+  margin: 10rem;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 8px;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  margin-bottom: 10px;
-display: flex;
- }
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 20vh; /* Adjustable height for content */
+  min-height: 200px; /* Minimum height */
+}
 
+nav {
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  }
+
+/* Welcome message and links styling */
+.welcome-message {
+  margin-bottom: 2rem;
+}
+
+.welcome-message h1 {
+  color: #2c5282;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.welcome-message p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-links a {
+  color: #2c5282;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+
+.welcome-links a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling (moved to bottom) */
+button {
+  display: block;
+  padding: 1rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: auto; /* Pushes button to bottom */
+}
+
+button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Book cards styling (for book details) */
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.book-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+}
+
+.book-card h3 {
+  color: #2c5282;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.book-card p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-card .details {
+  margin-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 0.75rem;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+    max-width: 90%;
+    height: auto;
+    min-height: 350px;
+  }
+
+  .welcome-message h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-message p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+
+  .book-card {
+    max-width: 100%;
+  }
+}

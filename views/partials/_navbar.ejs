@@ -1,18 +1,24 @@
   <nav>
+      
     <% if (user) { %>
       <!-- <div class="card-welcome"> -->
+    
       <h1>Welcome to BookiPedia! <%= user.username %></h1>
-      <!-- <div class="container"> -->
+      <!-- <button type="" -->
       <a href="/books">View all Books</a>
       <a href="/auth/sign-out">Sign out</a>
-    <!-- </div> -->
+    
     <% } else { %>
       <!-- <div class="card-welcome2"></div> -->
-      <h1>Welcome to the app, guest.</h1>
+  
+      <h1>Welcome Dear Guest.</h1>
+     
+        
       <!-- <div class="container"> -->
       <a href="/auth/sign-up">Sign up</a>
-      <a href="/auth/sign-in">Sign in</a>
-      <!-- </div> -->
+      <!-- <a href="/auth/sign-in">Sign in</a> -->
+      
+      
     <% } %>
   </nav>
 

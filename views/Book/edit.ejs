@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit <%= book.bookName %></title>
     <link rel="stylesheet" href="/stylesheet/style.css" />
+    
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
+    <div class="book-container"> 
+      
     <h1>Edit a Book!</h1>
     <form action="/books/<%= book._id %>?_method=PUT" method="POST">
 
@@ -16,6 +19,7 @@
         type="text" 
         name="bookName" 
         id="book" 
+        value="<%= book.bookName %>"
         />
 
       <label for="Auther">Auther's Name:</label>
@@ -46,12 +50,14 @@
         type="checkbox"
         name="availability"
         id="availability"
-        value="<%= book.availability %>"
+      <% if (book.availability) { %>
+    checked
+    <% } %>
     
       />
       <br>
       
       <button type="submit">Update Book</button>
-    </form>
+      </form>
   </body>
 </html>

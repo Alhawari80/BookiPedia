@@ -22,7 +22,7 @@ const bookSchema = new mongoose.Schema({
   },
     availability: {
     type: Boolean,
-    required: false,
+    required: true,
     
   },
   owner: {

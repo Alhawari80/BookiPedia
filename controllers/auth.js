@@ -89,7 +89,6 @@ router.get("/sign-up",(req,res)=>{
 })
 
 
-
 router.post("/sign-up", async (req, res )=>{
   const userInDatabase = await User.findOne({ username: req.body.username});
   if(userInDatabase) {
@@ -123,7 +122,7 @@ router.post("/sign-in", async (req, res) => {
     username: userInDatabase.username,
     _id: userInDatabase._id
   };
-  res.redirect("/");
+  res.redirect("/books");
 })
 
 

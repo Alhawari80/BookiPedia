@@ -12,8 +12,15 @@ router.get('/', async(req, res) => {
 router.get('/new', async (req, res) => {
   res.render('Book/new.ejs');
 });
-
+// to validate the checkbox in save (add book)
 router.post('/', async (req, res) => {
+
+  if (req.body.availability === "on") {
+    req.body.availability = true;
+  } else {
+    req.body.availability = false;
+  }
+
   req.body.owner = req.session.user._id;
   await Book.create(req.body);
   res.redirect('/books');
@@ -58,7 +65,14 @@ router.get('/:bookId/edit', async (req, res) => {
 
 router.put('/:bookId', async (req, res) => {
   try {
-    const currentBook = await Book.findById(req.params.Book);
+
+  if (req.body.availability === "on") {
+    req.body.availability = true;
+  } else {
+    req.body.availability = false;
+  }
+
+    const currentBook = await Book.findById(req.params.bookId);
     if (currentBook.owner.equals(req.session.user._id)) {
       await currentBook.updateOne(req.body);
       res.redirect('/books');
@@ -67,7 +81,7 @@ router.put('/:bookId', async (req, res) => {
     }
   } catch (error) {
     console.log(error);
-    res.redirect('/');
+    res.redirect('/books');
   }
 });
 

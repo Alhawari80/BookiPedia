@@ -1,24 +1,45 @@
 <%- include("../partials/_navbar.ejs")  %>
 <link rel="stylesheet" href="/stylesheet/style.css" />
-<h1>Here's all Our Books</h1>
-  <!-- <link rel="stylesheet" href="/stylesheet/style.css" /> -->
-<ul>
+<div class="book-container"> 
+  
   <% books.forEach(Book => { %>
-    <li>
-      The Book: 
-      <%= Book.BookName %> 
-      Of
-       <%= Book.auther %>
-      owned by
-      <%= Book.owner.username %>
-      is 
-       <%= Book.availability %> 
-       <div class="button-menu">
-      <a href="/books/<%= Book._id %>">View more details</a> 
-      </div>
-    </li>
-  <% }) %>
-</ul>
+  <div class="book-card">
+  <h2> <%= Book.bookName %> </h2>
+  <h3><%= Book.auther %></h3>
+  <h4><%= Book.owner.username %></h4>
+ 
+
+<% if (Book.availability) { %>
+      <p> Available </p>
+      <% } else { %>
+        <p> Not Available in Bahrain!</p>
+        <% } %>
+
+   <button onclick="window.location.href='/books/<%= Book._id %>'">View more details</button>
+</div>
+<% }) %>
+</div>
+
 <div class="button">
 <a href="/books/new">Add a new Book</a>
 </div>
+
+
+<!-- <h1>Here's all Our Books</h1>
+  <! <link rel="stylesheet" href="/stylesheet/style.css" /> -->
+    <!-- <li>
+      The Book: 
+     
+      Of
+       
+      owned by
+      
+      is 
+       
+       <div class="button-menu">
+      <a href=></a> 
+      </div>
+    </li>
+   
+</ul> -> -->
+
