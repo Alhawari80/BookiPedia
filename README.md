@@ -27,6 +27,5 @@ Follow these steps to set up BookiPedia locally:
    git clone https://github.com/Alhawari80/BookiPedia.git
    cd BookiPedia
 
-## Project Structure
 
 ![image](C:\Users\HOME\OneDrive\Pictures\Screenshots)
