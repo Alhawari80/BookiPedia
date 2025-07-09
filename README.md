@@ -29,7 +29,7 @@ Follow these steps to set up BookiPedia locally:
 
 ## Project Structure
 ```
-![image](images/Screenshot 2025-07-09 184850.png)
+![image](./images/Screenshot 2025-07-09 184850.png)
 
 
 
