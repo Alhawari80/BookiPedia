@@ -29,7 +29,7 @@ Follow these steps to set up BookiPedia locally:
 
 ## Project Structure
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://tse4.mm.bing.net/th/id/OIP.RMCEk1TpX_rWEbESvEawXQHaFx?rs=1&pid=ImgDetMain&o=7&rm=3)
 
 
 
