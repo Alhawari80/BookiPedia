@@ -28,7 +28,7 @@ Follow these steps to set up BookiPedia locally:
    cd BookiPedia
 
 ## Project Structure
-
+```
 ![alt text](https://tse4.mm.bing.net/th/id/OIP.RMCEk1TpX_rWEbESvEawXQHaFx?rs=1&pid=ImgDetMain&o=7&rm=3)
 
 
