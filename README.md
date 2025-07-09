@@ -1,4 +1,4 @@
-# BookiPedia
+# BookiPedia 
 
 Welcome to **BookiPedia**, a cutting-edge interactive reading platform and cloud library. This project aims to provide users with a seamless way to explore books within a clean and user-friendly interface.
 
@@ -33,10 +33,12 @@ Follow these steps to set up BookiPedia locally:
 **ERD**
 ![ERD](images/1.png)
 
+## Project Plan
 **Trello**
 ![Trello](images/10.png)
 
-**Pages of The App**
+
+## Pages of The App
 ![Welcome-Page](images/3.png)
 
 ![Sign-In-Page](images/4.png)
@@ -52,5 +54,5 @@ Follow these steps to set up BookiPedia locally:
 ![Add-Book](images/9.png)
 
 
-
+## [Live-Demo](https://bookipedia-jbya.onrender.com/)
 
