@@ -6,6 +6,7 @@ Welcome to **BookiPedia**, a cutting-edge interactive reading platform and cloud
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
+- [Project Structure](#Project-Structure)
 
 ## Features
 - **Cloud Library**: Store and access your books or documents in one place.
@@ -26,3 +27,6 @@ Follow these steps to set up BookiPedia locally:
    git clone https://github.com/Alhawari80/BookiPedia.git
    cd BookiPedia
 
+## Project Structure
+
+![image](C:\Users\HOME\OneDrive\Pictures\Screenshots)
