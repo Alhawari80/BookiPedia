@@ -34,11 +34,17 @@ Follow these steps to set up BookiPedia locally:
 
 ## Project Structure
 ![Screenshot 2025-07-09 201019](https://github.com/user-attachments/assets/ec350153-5a1b-4010-af2d-91153bef4899)
+
 ![Screenshot 2025-07-09 201036](https://github.com/user-attachments/assets/29c2abdf-d32c-4234-bf8b-cf610bb2809d)
+
 ![Screenshot 2025-07-09 201049](https://github.com/user-attachments/assets/485ae285-1e29-4780-9ca9-34432df06e05)
+
 ![Screenshot 2025-07-09 202443](https://github.com/user-attachments/assets/d2e22dbd-507b-43fc-8433-5cf7ee5b1807)
+
 ![Screenshot 2025-07-09 202500](https://github.com/user-attachments/assets/0c97ffba-4125-4fd6-b545-e30c1b0124d1)
+
 ![Screenshot 2025-07-09 202522](https://github.com/user-attachments/assets/e07b7eb6-502d-4868-8e08-92e7c366889c)
+
 ![Screenshot 2025-07-09 201124](https://github.com/user-attachments/assets/699140c6-389a-4544-ac96-25a6ad8d5c33)
 
 
