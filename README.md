@@ -26,3 +26,5 @@ Follow these steps to set up BookiPedia locally:
    git clone https://github.com/Alhawari80/BookiPedia.git
    cd BookiPedia
 
+![Screenshot 2025-07-09 184850](https://github.com/user-attachments/assets/4830b750-3009-4d50-bdb3-87b07d429a22)
+
