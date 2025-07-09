@@ -27,18 +27,28 @@ Follow these steps to set up BookiPedia locally:
    git clone https://github.com/Alhawari80/BookiPedia.git
    cd BookiPedia
 
-## Project Structure
+
 ```
+## Project Structure
+**ERD**
 ![ERD](images/1.png)
 
+**Trello**
 ![Trello](images/10.png)
 
+**Pages of The App**
 ![Welcome-Page](images/3.png)
+
 ![Sign-In-Page](images/4.png)
+
 ![Sign-Up-Page](images/5.png)
+
 ![View-All-Page](images/6.png)
+
 ![Edit-Page](images/8.png)
+
 ![Book-Details](images/7.png)
+
 ![Add-Book](images/9.png)
 
 
