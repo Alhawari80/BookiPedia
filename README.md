@@ -1,15 +1,11 @@
 # BookiPedia
 
-Welcome to **BookiPedia**, a cutting-edge interactive reading platform and cloud library featuring an AI-powered reading assistant. This project aims to provide users with a seamless way to explore books, convert documents, and interact with an AI for Q&A, all within a clean and user-friendly interface.
+Welcome to **BookiPedia**, a cutting-edge interactive reading platform and cloud library. This project aims to provide users with a seamless way to explore books within a clean and user-friendly interface.
 
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - **Cloud Library**: Store and access your books or documents in one place.
@@ -29,3 +25,4 @@ Follow these steps to set up BookiPedia locally:
    ```bash
    git clone https://github.com/Alhawari80/BookiPedia.git
    cd BookiPedia
+

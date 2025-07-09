@@ -13,7 +13,7 @@
       <button type="submit">Unfavorite It!</button>
     </form>
   <% } else { %>
-    <p>You havn't favorited this Book</p>
+    <p>You havn't liked this Book</p>
     <form action="/books/<%= book._id %>/favorited-by/<%= user._id %>" method="POST">
         <button type="submit">Favorite It!</button>
       </form>
