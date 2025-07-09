@@ -31,10 +31,15 @@ Follow these steps to set up BookiPedia locally:
 ```
 ![ERD](images/1.png)
 
+![Trello](images/10.png)
 
-
-
-
+![Welcome-Page](images/3.png)
+![Sign-In-Page](images/4.png)
+![Sign-Up-Page](images/5.png)
+![View-All-Page](images/6.png)
+![Edit-Page](images/8.png)
+![Book-Details](images/7.png)
+![Add-Book](images/9.png)
 
 
 
