@@ -28,8 +28,8 @@ Follow these steps to set up BookiPedia locally:
    cd BookiPedia
 
 ## Project Structure
-
-![image](./public)
+```
+![image](images/Screenshot 2025-07-09 184850.png)
 
 
 
