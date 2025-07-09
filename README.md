@@ -29,6 +29,13 @@ Follow these steps to set up BookiPedia locally:
 
 
 ```
+## Future Inhancements
+
+- **Likes & Dislikes** 👍👎
+- **Add to cart** ➕🛒
+- **Payment Gateway** 💲💳
+- **Visual inhancements**  🎨
+
 ## Project Structure
 **ERD**
 ![ERD](images/1.png)
