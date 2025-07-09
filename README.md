@@ -22,10 +22,14 @@ Welcome to **BookiPedia**, a cutting-edge interactive reading platform and cloud
 ## Installation
 Follow these steps to set up BookiPedia locally:
 
-1. **Clone the Repository**:
+  **Clone the Repository**:
    ```bash
    git clone https://github.com/Alhawari80/BookiPedia.git
    cd BookiPedia
 
 
-![image](C:\Users\HOME\OneDrive\Pictures\Screenshots)
+![image](./public)
+
+
+
+
